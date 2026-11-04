@@ -67,3 +67,4 @@ vcpkg_installed/
 Testing/
 .cache/
 .vs/
+/search_methods/release.txt
