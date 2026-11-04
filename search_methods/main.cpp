@@ -55,16 +55,25 @@ void Run(string method_name, Participant<T> p, const vector<T>& data, const T& t
 
 int main()
 {
-    std::vector<int> data = { 10, 20, 40, 5, 3, 1, 7, 15, 8, 30 };
+    cout << endl << "**************INTEGER SEARCH RACE**************" << endl << endl;
+    auto DataSets = GenerateDataSets();
+    while (!DataSets.empty())
+    {
+        auto& ds = DataSets.top();
+        dataset = ds.description;
+        const auto& data = ds.data;
 
-    std::cout << "Search 7: "
-        << skip_list_search(data, 7) << std::endl;
+        if (data.empty()) { DataSets.pop(); continue; }
+        const int target = data[data.size() / 2];
 
-    std::cout << "Search 30: "
-        << skip_list_search(data, 30) << std::endl;
+        team = "Index Search Team";
+        // RUN(namesearch_by_surname);
 
-    std::cout << "Search 100: "
-        << skip_list_search(data, 100) << std::endl;
-
-    return 0;
+        team = "Skip List Team";
+        RUN(skip_list_search);
+        DataSets.pop();
+    }
+    ofstream fout("release.txt");
+    for (auto& s : logs)
+        fout << s << endl;
 }
