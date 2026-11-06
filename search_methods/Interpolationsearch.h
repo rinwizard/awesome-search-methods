@@ -1,16 +1,20 @@
 #pragma once
 
 #include <vector>
+#include "Participants.h"
 
 inline size_t interpolation_search(const std::vector<int>& data, const int& target)
 {
+    if (data.empty())
+        return NOT_FOUND;
+    
     int low = 0;
     int high = (int)data.size() - 1;
 
     while (low <= high && target >= data[low] && target <= data[high])
     {
         if (data[low] == data[high])
-            return data[low] == target ? low : NOT_FOUND;
+            return (data[low] == target) ? low : NOT_FOUND;
 
         int pos = low + (long long)(high - low) * ((long long)target - data[low])
                       / ((long long)data[high] - data[low]);
