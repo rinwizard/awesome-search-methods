@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "asm_app\\x64\\Debug\\DataSetRegister.obj",
+            "outputs": [
+                "asm_app\\x64\\Debug\\DataSetRegister.h.obj.dt.module.json",
+                "asm_app\\x64\\Debug\\DataSetRegister.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
