@@ -30,4 +30,10 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="comm_data_sorted.txt" />
+    <Text Include="comm_data_unsorted.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

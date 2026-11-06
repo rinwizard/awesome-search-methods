@@ -43,7 +43,7 @@ void Run(string method_name, Participant<T> p, const vector<T>& data, const T& t
     auto stop = chrono::system_clock::now();
     auto time = chrono::duration_cast<chrono::microseconds>(stop - start).count();
 
-    bool get_res = (res == NOT_FOUND) || (res < data.size() && data[res] == target);
+    bool get_res = (res != NOT_FOUND) || (res < data.size() && data[res] == target);
     ostringstream oss{};
     oss << "\"" << dataset << "\"\t"
         << data.size() << "\t"
@@ -64,7 +64,7 @@ int main()
         const auto& data = ds.data;
 
         if (data.empty()) { DataSets.pop(); continue; }
-        const int target = data[data.size() / 2];
+        const int target = ds.target;
 
         team = "Index Search Team";
         // RUN(namesearch_by_surname);

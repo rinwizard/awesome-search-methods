@@ -10,6 +10,7 @@ struct DataSet
 {
 	std::string description;
 	std::vector<T> data;
+	T target;
 };
 
 inline std::vector<int> ReadFile(const std::string& path)
@@ -27,6 +28,7 @@ inline std::vector<int> ReadFile(const std::string& path)
 inline std::stack<DataSet<int>>  GenerateDataSets(){
 	std::stack<DataSet<int>> datastack;
 	//enter your datasets in format:
-	//datastack.push({"description", ReadFile("datasets/dataset's name") })
+	datastack.push({ "100 int sorted", ReadFile("comm_data_sorted.txt"), 42 });
+	datastack.push({ "100 int unsorted",ReadFile("comm_data_unsorted.txt"), 501 });
 	return datastack;
 }

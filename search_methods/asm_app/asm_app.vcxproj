@@ -146,6 +146,10 @@
     <ClInclude Include="..\Participants.h" />
     <ClInclude Include="..\SkipList.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="comm_data_sorted.txt" />
+    <Text Include="comm_data_unsorted.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
