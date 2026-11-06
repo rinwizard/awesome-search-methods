@@ -2,6 +2,7 @@
 #include <vector>
 #include <cstddef>
 #include "SkipList.h"
+#include "Interpolationsearch.h"
 //#include your .h file
 
 // not found

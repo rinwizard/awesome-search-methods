@@ -1,2 +1,4 @@
-"100 int unsorted"	100	Skip List Team	skip	list	search	2989
-"100 int sorted"	100	Skip List Team	skip	list	search	-1
+"100 int unsorted  "        100  Skip List             skip	list	search           3278200
+"100 int unsorted  "        100  Interpolation Search  interpolation	search       -1
+"100 int sorted    "        100  Skip List             skip	list	search           609700
+"100 int sorted    "        100  Interpolation Search  interpolation	search       19800
