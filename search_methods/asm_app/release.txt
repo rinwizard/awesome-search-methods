@@ -1,4 +1,6 @@
-"100 int unsorted  "        100  Skip List             skip	list	search           3278200
+"100 int unsorted  "        100  Skip List             skip	list	search           31043500
 "100 int unsorted  "        100  Interpolation Search  interpolation	search       -1
-"100 int sorted    "        100  Skip List             skip	list	search           609700
-"100 int sorted    "        100  Interpolation Search  interpolation	search       19800
+"100 int unsorted  "        100  Ternary Search        ternary	search             -1
+"100 int sorted    "        100  Skip List             skip	list	search           1271600
+"100 int sorted    "        100  Interpolation Search  interpolation	search       1600
+"100 int sorted    "        100  Ternary Search        ternary	search             600

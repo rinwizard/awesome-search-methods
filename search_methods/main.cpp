@@ -10,6 +10,7 @@
 #include "Interpolationsearch.h"
 #include "Participants.h"
 #include "SkipList.h"
+#include "TernarySearch.h"
 #include <regex>
 
 using namespace std;
@@ -80,6 +81,8 @@ int main()
         RUN(skip_list_search);
         team = "Interpolation Search";
         RUN(interpolation_search);
+        team = "Ternary Search";
+		RUN(ternary_search);
         DataSets.pop();
     }
 
