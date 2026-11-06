@@ -73,6 +73,8 @@ int main()
         RUN(skip_list_search);
         DataSets.pop();
     }
+    for (auto& s : logs)
+        cout << s << endl;
     ofstream fout("release.txt");
     for (auto& s : logs)
         fout << s << endl;
