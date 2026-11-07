@@ -84,8 +84,10 @@ int main()
         RUN(interpolation_search);
         team = "Ternary Search";
 		RUN(ternary_search);
-        team = "Hash Table method";
+        team = "Hash Table Method";
         RUN(hash_search);
+        team = "Exponential Search";
+        RUN(exponential_search);
         DataSets.pop();
     }
 

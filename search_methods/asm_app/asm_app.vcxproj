@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\DataSetRegister.h" />
+    <ClInclude Include="..\Exponential.h" />
     <ClInclude Include="..\HashTable.h" />
     <ClInclude Include="..\Interpolationsearch.h" />
     <ClInclude Include="..\Participants.h" />
