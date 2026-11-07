@@ -30,5 +30,8 @@ inline std::stack<DataSet<int>>  GenerateDataSets(){
 	//enter your datasets in format:
 	datastack.push({ "100 int sorted", ReadFile("comm_data_sorted.txt"), 22430 });
 	datastack.push({ "100 int unsorted",ReadFile("comm_data_unsorted.txt"), 2 });
+	datastack.push({ "Ternary best", ReadFile("ternary_best.txt"), 333 });
+	datastack.push({ "Ternary average", ReadFile("ternary_average.txt"), 1500 });
+	datastack.push({ "Ternary worst", ReadFile("ternary_worst.txt"), 2001 });
 	return datastack;
 }

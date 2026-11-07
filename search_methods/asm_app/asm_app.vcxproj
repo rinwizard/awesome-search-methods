@@ -153,6 +153,9 @@
   <ItemGroup>
     <Text Include="comm_data_sorted.txt" />
     <Text Include="comm_data_unsorted.txt" />
+    <Text Include="ternary_average.txt" />
+    <Text Include="ternary_best.txt" />
+    <Text Include="ternary_worst.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
