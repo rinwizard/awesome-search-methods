@@ -153,9 +153,6 @@
   <ItemGroup>
     <Text Include="comm_data_sorted.txt" />
     <Text Include="comm_data_unsorted.txt" />
-    <Text Include="hash_avg.txt" />
-    <Text Include="hash_best.txt" />
-    <Text Include="hash_worst.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
