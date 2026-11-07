@@ -1,7 +1,7 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\rincewind\\documents\\github\\awesome-search-methods\\search_methods\\main.cpp",
+        "Source": "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\main.cpp",
         "ProvidedModule": "",
         "Includes": [
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vector",
@@ -164,12 +164,16 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\ostream",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\fstream",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_filebuf.hpp",
-            "c:\\users\\rincewind\\documents\\github\\awesome-search-methods\\search_methods\\datasetregister.h",
+            "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\datasetregister.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\stack",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\deque",
-            "c:\\users\\rincewind\\documents\\github\\awesome-search-methods\\search_methods\\participants.h",
-            "c:\\users\\rincewind\\documents\\github\\awesome-search-methods\\search_methods\\skiplist.h",
+            "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\interpolationsearch.h",
+            "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\participants.h",
+            "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\skiplist.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\random",
+            "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\ternarysearch.h",
+            "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\hashtable.h",
+            "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\exponential.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\regex"
         ],
         "ImportedModules": [],

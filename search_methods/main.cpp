@@ -5,9 +5,13 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
+#include <iomanip> 
 #include "DataSetRegister.h"
+#include "Interpolationsearch.h"
+#include "HashTable.h"
 #include "Participants.h"
 #include "SkipList.h"
+#include "TernarySearch.h"
 #include <regex>
 
 using namespace std;
@@ -27,9 +31,7 @@ string ParseName(string& method_name)
     return res;
 }
 
-//meowmewo
 #define RUN(x) { Run(#x, x, data, target); }
-
 
 static string team = "";
 static string dataset = "";
@@ -41,21 +43,31 @@ void Run(string method_name, Participant<T> p, const vector<T>& data, const T& t
     auto start = chrono::system_clock::now();
     size_t res = p(data, target);
     auto stop = chrono::system_clock::now();
-    auto time = chrono::duration_cast<chrono::microseconds>(stop - start).count();
 
-    bool get_res = (res != NOT_FOUND) || (res < data.size() && data[res] == target);
+    auto time = chrono::duration_cast<chrono::nanoseconds>(stop - start).count();
+
+    bool get_res = (res != NOT_FOUND) && (res < data.size() && data[res] == target);
+
     ostringstream oss{};
-    oss << "\"" << dataset << "\"\t"
-        << data.size() << "\t"
-        << team << "\t"
-        << ParseName(method_name) << "\t"
+    oss << "\"" << left << setw(18) << dataset << "\" "
+        << setw(10) << right << data.size() << "  "
+        << setw(20) << left << team << "  "
+        << setw(25) << left << ParseName(method_name) << "  "
         << (get_res ? to_string(time) : "-1");
+
     logs.push_back(oss.str());
 }
 
 int main()
 {
     cout << endl << "**************INTEGER SEARCH RACE**************" << endl << endl;
+
+    cout << "\"" << left << setw(18) << "Dataset" << "\" "
+        << setw(10) << right << "Size" << "  "
+        << setw(20) << left << "Team" << "  "
+        << setw(25) << left << "Method" << "  "
+        << "Time (ns)" << endl;
+
     auto DataSets = GenerateDataSets();
     while (!DataSets.empty())
     {
@@ -66,15 +78,22 @@ int main()
         if (data.empty()) { DataSets.pop(); continue; }
         const int target = ds.target;
 
-        team = "Index Search Team";
-        // RUN(namesearch_by_surname);
-
-        team = "Skip List Team";
+        team = "Skip List";
         RUN(skip_list_search);
+        team = "Interpolation Search";
+        RUN(interpolation_search);
+        team = "Ternary Search";
+		RUN(ternary_search);
+        team = "Hash Table Method";
+        RUN(hash_search);
+        team = "Exponential Search";
+        RUN(exponential_search);
         DataSets.pop();
     }
+
     for (auto& s : logs)
         cout << s << endl;
+
     ofstream fout("release.txt");
     for (auto& s : logs)
         fout << s << endl;

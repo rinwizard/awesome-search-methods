@@ -2,6 +2,10 @@
 #include <vector>
 #include <cstddef>
 #include "SkipList.h"
+#include "Interpolationsearch.h"
+#include "TernarySearch.h"
+#include "HashTable.h"
+#include "Exponential.h"
 //#include your .h file
 
 // not found

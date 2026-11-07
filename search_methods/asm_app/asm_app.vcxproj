@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{aafc7239-835c-4f36-8e74-895572c5c71f}</ProjectGuid>
+    <ProjectGuid>{AAFC7239-835C-4F36-8E74-895572C5C71F}</ProjectGuid>
     <RootNamespace>asmapp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -143,8 +143,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\DataSetRegister.h" />
+    <ClInclude Include="..\Exponential.h" />
+    <ClInclude Include="..\HashTable.h" />
+    <ClInclude Include="..\Interpolationsearch.h" />
     <ClInclude Include="..\Participants.h" />
     <ClInclude Include="..\SkipList.h" />
+    <ClInclude Include="TernarySearch.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="comm_data_sorted.txt" />
