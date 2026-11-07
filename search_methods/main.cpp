@@ -8,6 +8,7 @@
 #include <iomanip> 
 #include "DataSetRegister.h"
 #include "Interpolationsearch.h"
+#include "HashTable.h"
 #include "Participants.h"
 #include "SkipList.h"
 #include "TernarySearch.h"
@@ -83,6 +84,8 @@ int main()
         RUN(interpolation_search);
         team = "Ternary Search";
 		RUN(ternary_search);
+        team = "Hash Table method";
+        RUN(hash_search);
         DataSets.pop();
     }
 

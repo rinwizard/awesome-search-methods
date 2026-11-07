@@ -4,6 +4,7 @@
 #include "SkipList.h"
 #include "Interpolationsearch.h"
 #include "TernarySearch.h"
+#include "HashTable.h"
 //#include your .h file
 
 // not found
