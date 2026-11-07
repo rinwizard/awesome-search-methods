@@ -28,7 +28,10 @@ inline std::vector<int> ReadFile(const std::string& path)
 inline std::stack<DataSet<int>>  GenerateDataSets(){
 	std::stack<DataSet<int>> datastack;
 	//enter your datasets in format:
-	datastack.push({ "100 int sorted", ReadFile("comm_data_sorted.txt"), 22430 });
-	datastack.push({ "100 int unsorted",ReadFile("comm_data_unsorted.txt"), 2 });
+	datastack.push({ "10000 int sorted", ReadFile("comm_data_sorted.txt"), 22430 });
+	datastack.push({ "10000 int unsorted",ReadFile("comm_data_unsorted.txt"), 2 });
+	datastack.push({ "Hash Worst  (10)", ReadFile("hash_worst.txt"), 5 });
+	datastack.push({ "Hash Average (500)", ReadFile("hash_avg.txt"), 250 });
+	datastack.push({ "Hash Best (2000)", ReadFile("hash_best.txt"), 42 });
 	return datastack;
 }

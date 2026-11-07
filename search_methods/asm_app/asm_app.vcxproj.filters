@@ -47,5 +47,14 @@
     <Text Include="comm_data_unsorted.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
+    <Text Include="hash_avg.txt">
+      <Filter>Файлы заголовков</Filter>
+    </Text>
+    <Text Include="hash_best.txt">
+      <Filter>Файлы заголовков</Filter>
+    </Text>
+    <Text Include="hash_worst.txt">
+      <Filter>Файлы заголовков</Filter>
+    </Text>
   </ItemGroup>
 </Project>
