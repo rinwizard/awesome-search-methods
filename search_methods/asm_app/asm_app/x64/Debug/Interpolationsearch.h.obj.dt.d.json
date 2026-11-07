@@ -1,7 +1,7 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\rincewind\\source\\repos\\rinwizard\\awesome-search-methods\\search_methods\\interpolationsearch.h",
+        "Source": "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\interpolationsearch.h",
         "ProvidedModule": "",
         "Includes": [
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vector",
@@ -92,8 +92,8 @@
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\corecrt_memory.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\tuple",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\xpolymorphic_allocator.h",
-            "c:\\users\\rincewind\\source\\repos\\rinwizard\\awesome-search-methods\\search_methods\\participants.h",
-            "c:\\users\\rincewind\\source\\repos\\rinwizard\\awesome-search-methods\\search_methods\\skiplist.h",
+            "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\participants.h",
+            "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\skiplist.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\random",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_int128.hpp",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\algorithm",
@@ -133,7 +133,10 @@
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\ctype.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\clocale",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\locale.h",
-            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\xbit_ops.h"
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\xbit_ops.h",
+            "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\ternarysearch.h",
+            "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\hashtable.h",
+            "c:\\users\\windows\\source\\repos\\awesome-search-methods\\search_methods\\exponential.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -1,10 +1,25 @@
-"100 int unsorted  "      10000  Skip List             skip	list	search           64171800
+"Ternary worst     "       1000  Skip List             skip	list	search           33732500
+"Ternary worst     "       1000  Interpolation Search  interpolation	search       1300
+"Ternary worst     "       1000  Ternary Search        ternary	search             1100
+"Ternary worst     "       1000  Hash Table Method     hash	search                5311700
+"Ternary worst     "       1000  Exponential Search    exponential	search         800
+"Ternary average   "       1000  Skip List             skip	list	search           9275900
+"Ternary average   "       1000  Interpolation Search  interpolation	search       1500
+"Ternary average   "       1000  Ternary Search        ternary	search             1700
+"Ternary average   "       1000  Hash Table Method     hash	search                7482900
+"Ternary average   "       1000  Exponential Search    exponential	search         3200
+"Ternary best      "       1000  Skip List             skip	list	search           9394400
+"Ternary best      "       1000  Interpolation Search  interpolation	search       1100
+"Ternary best      "       1000  Ternary Search        ternary	search             200
+"Ternary best      "       1000  Hash Table Method     hash	search                4842300
+"Ternary best      "       1000  Exponential Search    exponential	search         1600
+"100 int unsorted  "      10000  Skip List             skip	list	search           169728900
 "100 int unsorted  "      10000  Interpolation Search  interpolation	search       -1
 "100 int unsorted  "      10000  Ternary Search        ternary	search             -1
-"100 int unsorted  "      10000  Hash Table Method     hash	search                20196600
+"100 int unsorted  "      10000  Hash Table Method     hash	search                68114700
 "100 int unsorted  "      10000  Exponential Search    exponential	search         -1
-"100 int sorted    "      10000  Skip List             skip	list	search           35943700
-"100 int sorted    "      10000  Interpolation Search  interpolation	search       800
-"100 int sorted    "      10000  Ternary Search        ternary	search             900
-"100 int sorted    "      10000  Hash Table Method     hash	search                22521700
-"100 int sorted    "      10000  Exponential Search    exponential	search         1700
+"100 int sorted    "      10000  Skip List             skip	list	search           160855500
+"100 int sorted    "      10000  Interpolation Search  interpolation	search       2200
+"100 int sorted    "      10000  Ternary Search        ternary	search             2100
+"100 int sorted    "      10000  Hash Table Method     hash	search                95352700
+"100 int sorted    "      10000  Exponential Search    exponential	search         3000

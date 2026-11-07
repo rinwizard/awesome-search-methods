@@ -33,5 +33,8 @@ inline std::stack<DataSet<int>>  GenerateDataSets(){
 	datastack.push({ "Hash Worst  (10)", ReadFile("hash_worst.txt"), 5 });
 	datastack.push({ "Hash Average (500)", ReadFile("hash_avg.txt"), 250 });
 	datastack.push({ "Hash Best (2000)", ReadFile("hash_best.txt"), 42 });
+	datastack.push({ "Ternary best", ReadFile("ternary_best.txt"), 333 });
+	datastack.push({ "Ternary average", ReadFile("ternary_average.txt"), 1500 });
+	datastack.push({ "Ternary worst", ReadFile("ternary_worst.txt"), 2001 });
 	return datastack;
 }
