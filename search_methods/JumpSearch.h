@@ -40,10 +40,3 @@ inline size_t jump_search(const std::vector<int>& data, const int& target)
 
     return NOT_FOUND;
 }
-
-inline void AddJumpDataSets(std::stack<DataSet<int>>& datastack)
-{
-    datastack.push({ "Jump Best  (target = 10, first element)", ReadFile("comm_data_sorted.txt"), 10 });
-    datastack.push({ "Jump Average (target = 1610, middle)",    ReadFile("comm_data_sorted.txt"), 1610 });
-    datastack.push({ "Jump Worst (target = 99999, absent)",     ReadFile("comm_data_sorted.txt"), 99999 });
-}
