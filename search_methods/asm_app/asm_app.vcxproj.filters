@@ -35,10 +35,13 @@
     <ClInclude Include="..\Interpolationsearch.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="TernarySearch.h">
+    <ClInclude Include="..\Exponential.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\Exponential.h">
+    <ClInclude Include="..\TernarySearch.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\JumpSearch.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
@@ -46,15 +49,6 @@
     <Text Include="comm_data_sorted.txt" />
     <Text Include="comm_data_unsorted.txt">
       <Filter>Файлы ресурсов</Filter>
-    </Text>
-    <Text Include="hash_avg.txt">
-      <Filter>Файлы заголовков</Filter>
-    </Text>
-    <Text Include="hash_best.txt">
-      <Filter>Файлы заголовков</Filter>
-    </Text>
-    <Text Include="hash_worst.txt">
-      <Filter>Файлы заголовков</Filter>
     </Text>
   </ItemGroup>
 </Project>
