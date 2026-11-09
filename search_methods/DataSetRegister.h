@@ -42,5 +42,8 @@ inline std::stack<DataSet<int>>  GenerateDataSets(){
 	datastack.push({ "Jump Best", ReadFile("comm_data_sorted.txt"), 10 });
     datastack.push({ "Jump Average", ReadFile("comm_data_sorted.txt"), 1610 });
     datastack.push({ "Jump Worst", ReadFile("comm_data_sorted.txt"), 99999 });
+	datastack.push({ "Interpolation best", ReadFile("interpolation_best.txt"), 1501 });
+	datastack.push({ "Interpolation average", ReadFile("interpolation_average.txt"), 492871 });
+	datastack.push({ "Interpolation worst", ReadFile("interpolation_worst.txt"), 998 });
 	return datastack;
 }
