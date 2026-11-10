@@ -45,5 +45,8 @@ inline std::stack<DataSet<int>>  GenerateDataSets(){
 	datastack.push({ "Interpolation best", ReadFile("interpolation_best.txt"), 1501 });
 	datastack.push({ "Interpolation best", ReadFile("interpolation_average.txt"), 492871 });
 	datastack.push({ "Interpolation best", ReadFile("interpolation_worst.txt"), 998 });
+	datastack.push({ "Exponential best", ReadFile("exponential_best.txt"), 139 });
+	datastack.push({ "Exponential avg", ReadFile("exponential_average.txt"), 24675 });
+	datastack.push({ "Exponential worst", ReadFile("exponential_worst.txt"), 2000000000 });
 	return datastack;
 }

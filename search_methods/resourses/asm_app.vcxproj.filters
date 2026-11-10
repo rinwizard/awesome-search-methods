@@ -59,5 +59,14 @@
     <Text Include="interpolation_worst.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
+    <Text Include="exponential_average.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="exponential_best.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="exponential_worst.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
   </ItemGroup>
 </Project>
