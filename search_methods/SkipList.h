@@ -5,6 +5,7 @@
 #include <random>
 #include <memory>
 #include <utility>
+#include <map>
 
 class SkipList {
 private:
@@ -16,9 +17,9 @@ private:
         std::vector<Node*> next;
 
         Node(int value, std::size_t index, int level)
-            : value(value),
-            index(index),
-            next(level + 1, nullptr)
+            : value(value), 
+            index(index), 
+            next(level + 1, nullptr) 
         {
         }
     };
@@ -28,10 +29,8 @@ private:
     std::mt19937 generator;
     std::uniform_int_distribution<int> coin;
 
-    int randomLevel()
-    {
+    int randomLevel() {
         int level = 0;
-
         while (level < maxlevel - 1 && coin(generator) == 1)
         {
             ++level;
@@ -48,39 +47,32 @@ public:
     {
     }
 
-    void insert(int value, std::size_t index)
-    {
+    void insert(int value, std::size_t index) {
         Node* current = &head;
         std::vector<Node*> update(maxlevel, nullptr);
 
-        for (int i = maxlevel - 1; i >= 0; --i)
-        {
+        for (int i = maxlevel - 1; i >= 0; --i) {
             while (current->next[i] != nullptr &&
-                current->next[i]->value < value)
-            {
+                current->next[i]->value < value) {
                 current = current->next[i];
             }
-
             update[i] = current;
         }
 
         int level = randomLevel();
-
         auto newNode = std::make_unique<Node>(value, index, level);
         Node* newNodePtr = newNode.get();
-
         nodes.push_back(std::move(newNode));
 
-        for (int i = 0; i <= level; ++i)
-        {
+        for (int i = 0; i <= level; ++i) {
             newNodePtr->next[i] = update[i]->next[i];
             update[i]->next[i] = newNodePtr;
         }
     }
 
-    std::size_t search(int target)
+    std::size_t search(int target) const
     {
-        Node* current = &head;
+        const Node* current = &head;
 
         for (int i = maxlevel - 1; i >= 0; --i)
         {
@@ -106,12 +98,17 @@ inline std::size_t skip_list_search(
     const std::vector<int>& data,
     const int& target)
 {
-    SkipList list;
+    static std::map<std::vector<int>, SkipList> cache;
 
-    for (std::size_t i = 0; i < data.size(); ++i)
-    {
-        list.insert(data[i], i);
+    auto it = cache.find(data);
+
+    if (it == cache.end()) {
+        auto result = cache.try_emplace(data);
+        it = result.first;
+        for (std::size_t i = 0; i < data.size(); ++i) {
+            it->second.insert(data[i], i);
+        }
     }
 
-    return list.search(target);
+    return it->second.search(target);
 }
