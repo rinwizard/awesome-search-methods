@@ -136,7 +136,10 @@
             "c:\\users\\rincewind\\source\\repos\\rinwizard\\awesome-search-methods\\search_methods\\interpolationsearch.h",
             "c:\\users\\rincewind\\source\\repos\\rinwizard\\awesome-search-methods\\search_methods\\ternarysearch.h",
             "c:\\users\\rincewind\\source\\repos\\rinwizard\\awesome-search-methods\\search_methods\\hashtable.h",
-            "c:\\users\\rincewind\\source\\repos\\rinwizard\\awesome-search-methods\\search_methods\\exponential.h"
+            "c:\\users\\rincewind\\source\\repos\\rinwizard\\awesome-search-methods\\search_methods\\exponential.h",
+            "c:\\users\\rincewind\\source\\repos\\rinwizard\\awesome-search-methods\\search_methods\\jumpsearch.h",
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\stack",
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\deque"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

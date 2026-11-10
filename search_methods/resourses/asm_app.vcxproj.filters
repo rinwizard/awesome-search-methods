@@ -50,5 +50,38 @@
     <Text Include="comm_data_unsorted.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
+    <Text Include="interpolation_average.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="interpolation_best.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="interpolation_worst.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="exponential_average.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="exponential_best.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="exponential_worst.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="int_100.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="int_1000.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="int_10000.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="int_100000.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="int_1000000.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
   </ItemGroup>
 </Project>
