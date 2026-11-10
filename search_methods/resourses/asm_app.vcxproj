@@ -161,6 +161,11 @@
     <Text Include="interpolation_average.txt" />
     <Text Include="interpolation_best.txt" />
     <Text Include="interpolation_worst.txt" />
+    <Text Include="int_100.txt" />
+    <Text Include="int_1000.txt" />
+    <Text Include="int_10000.txt" />
+    <Text Include="int_100000.txt" />
+    <Text Include="int_1000000.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

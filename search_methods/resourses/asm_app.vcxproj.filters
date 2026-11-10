@@ -68,5 +68,20 @@
     <Text Include="exponential_worst.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
+    <Text Include="int_100.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="int_1000.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="int_10000.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="int_100000.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="int_1000000.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
   </ItemGroup>
 </Project>
