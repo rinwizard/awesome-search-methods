@@ -1,7 +1,6 @@
 #pragma once
 
 #include <vector>
-#include <stack>
 #include <cstddef>
 #include <cmath>
 #include <algorithm>
