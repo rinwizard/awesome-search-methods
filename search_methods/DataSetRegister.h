@@ -41,8 +41,11 @@ inline std::stack<DataSet<int>>  GenerateDataSets(){
 	datastack.push({ "Hash Average (500)", ReadFile("hash_avg.txt"), 250 });
 	datastack.push({ "Hash Best (2000)", ReadFile("hash_best.txt"), 42 });
 	datastack.push({ "Skip Best (10000)", ReadFile("skip_best.txt"), 23502 });
+	datastack.push({ "Skip Best (10000)", ReadFile("skip_best.txt"), 1 });
 	datastack.push({ "Skip Avg (100000)", ReadFile("skip_average.txt"), 164333 });
+	datastack.push({ "Skip Avg (100000)", ReadFile("skip_average.txt"), 4984 });
 	datastack.push({ "Skip Worst (1M)", ReadFile("skip_worst.txt"), 103994 });
+	datastack.push({ "Skip Worst (1M)", ReadFile("skip_worst.txt"), 549719 });
 	datastack.push({ "Jump Best", ReadFile("comm_data_sorted.txt"), 10 });
     datastack.push({ "Jump Average", ReadFile("comm_data_sorted.txt"), 1610 });
     datastack.push({ "Jump Worst", ReadFile("comm_data_sorted.txt"), 99999 });
